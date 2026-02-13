@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechHub Store - Your Tech Shopping Destination</title>
+    <meta name="description" content="Discover the latest in tech at TechHub Store. From laptops to smartphones, we have everything you need.">
+    
+    <!-- Bootstrap CSS (from Bootstrap 5.3.0 documentation: https://getbootstrap.com/docs/5.3/getting-started/introduction/) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- Skip Navigation Link (Accessibility feature, kept as is) -->
+    <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
+
+    <!-- Header Section (Converted to Bootstrap Navbar for modern, responsive navigation) -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="#">TechHub Store</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Categories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex me-3">
+                        <input class="form-control me-2" type="search" placeholder="Search products..." aria-label="Search">
+                    </form>
+                    <a href="#" class="btn btn-outline-primary me-2">🛒 <span class="badge bg-secondary">0</span></a>
+                    <a href="#" class="btn btn-outline-secondary">👤 Login</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+
+        <!-- Hero Section (Using Bootstrap utilities for responsive, centered content) -->
+        <section id="hero-section" class="bg-primary text-white py-5 text-center">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title display-4">Welcome to TechHub Store</h1>
+                    <p class="hero-subtitle lead">Discover the Latest Tech Innovations</p>
+                    <a href="#featured-products" class="btn btn-light btn-lg">Shop Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories Section (Using Bootstrap grid for responsive layout) -->
+        <section id="categories-section" class="py-5">
+            <div class="container">
+                <h2 class="section-title text-center mb-4">Shop by Category</h2>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 mb-3">
+                        <div class="category-item border rounded p-3 text-center">
+                            <!-- Image comment: Replace with actual laptop image URL, e.g., a high-quality stock photo of laptops -->
+                            <img src="https://via.placeholder.com/100x100" alt="Laptops" class="img-fluid mb-2">
+                            <h5>Laptops & Computers</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 mb-3">
+                        <div class="category-item border rounded p-3 text-center">
+                            <!-- Image comment: Replace with actual smartphone image URL, e.g., a modern phone display -->
+                            <img src="https://via.placeholder.com/100x100" alt="Smartphones" class="img-fluid mb-2">
+                            <h5>Smartphones & Tablets</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 mb-3">
+                        <div class="category-item border rounded p-3 text-center">
+                            <!-- Image comment: Replace with actual audio/headphones image URL, e.g., wireless headphones -->
+                            <img src="https://via.placeholder.com/100x100" alt="Audio" class="img-fluid mb-2">
+                            <h5>Audio & Headphones</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 mb-3">
+                        <div class="category-item border rounded p-3 text-center">
+                            <!-- Image comment: Replace with actual camera image URL, e.g., DSLR or mirrorless camera -->
+                            <img src="https://via.placeholder.com/100x100" alt="Cameras" class="img-fluid mb-2">
+                            <h5>Cameras & Photography</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 mb-3">
+                        <div class="category-item border rounded p-3 text-center">
+                            <!-- Image comment: Replace with actual gaming console image URL, e.g., PlayStation or Xbox -->
+                            <img src="https://via.placeholder.com/100x100" alt="Gaming" class="img-fluid mb-2">
+                            <h5>Gaming & Consoles</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 mb-3">
+                        <div class="category-item border rounded p-3 text-center">
+                            <!-- Image comment: Replace with actual accessories image URL, e.g., chargers or cases -->
+                            <img src="https://via.placeholder.com/100x100" alt="Accessories" class="img-fluid mb-2">
+                            <h5>Accessories & More</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products Section (Using Bootstrap cards for product display, common in trending e-commerce sites) -->
+        <section id="featured-products" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="section-title text-center mb-4">Featured Products</h2>
+                <div class="row">
+                    <!-- Product 1 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="product-card card h-100">
+                           <img src="Wireless Headphones Pro.JPEG" alt=""> <!-- Image comment: Replace with actual Wireless Headphones Pro image URL -->
+                            <img src="https://via.placeholder.com/300x300" alt="Wireless Headphones Pro" class="card-img-top">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="product-name card-title">Wireless Headphones Pro</h5>
+                                <p class="product-desc card-text">Premium noise-canceling wireless headphones</p>
+                                <div class="product-meta mt-auto">
+                                    <span class="price fw-bold">$299.99</span>
+                                    <span class="rating">⭐⭐⭐⭐½ (4.5)</span>
+                                </div>
+                                <button class="btn btn-primary mt-3">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="product-card card h-100">
+                           <img src="Ultra HD Smart TV 55.webp" alt=""><!-- Image comment: Replace with actual Ultra HD Smart TV 55" image URL -->
+                            <img src="https://via.placeholder.com/300x300" alt="Ultra HD Smart TV 55" class="card-img-top">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="product-name card-title">Ultra HD Smart TV 55"</h5>
+                                <p class="product-desc card-text">4K resolution with HDR support</p>
+                                <div class="product-meta mt-auto">
+                                    <span class="price fw-bold">$799.99</span>
+                                    <span class="rating">⭐⭐⭐⭐⭐ (4.8)</span>
+                                </div>
+                                <button class="btn btn-primary mt-3">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="product-card card h-100">
+                          <img src="Gaming Laptop Elite.webp" alt="">  <!-- Image comment: Replace with actual Gaming Laptop Elite image URL -->
+                            <img src="https://via.placeholder.com/300x300" alt="Gaming Laptop Elite" class="card-img-top">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="product-name card-title">Gaming Laptop Elite</h5>
+                                <p class="product-desc card-text">High-performance laptop for gaming enthusiasts</p>
+                                <div class="product-meta mt-auto">
+                                    <span class="price fw-bold">$1,499.99</span>
+                                    <span class="rating">⭐⭐⭐⭐⭐ (4.7)</span>
+                                </div>
+                                <button class="btn btn-primary mt-3">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="product-card card h-100">
+                            <img src="Smartphone X Pro.webp" alt=""><!-- Image comment: Replace with actual Smartphone X Pro image URL -->
+                            <img src="https://via.placeholder.com/300x300" alt="Smartphone X Pro" class="card-img-top">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="product-name card-title">Smartphone X Pro</h5>
+                                <p class="product-desc card-text">Latest flagship smartphone with triple camera</p>
+                                <div class="product-meta mt-auto">
+                                    <span class="price fw-bold">$999.99</span>
+                                    <span class="rating">⭐⭐⭐⭐½ (4.6)</span>
+                                </div>
+                                <button class="btn btn-primary mt-3">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 5 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="product-card card h-100">
+                           <img src="Smart Watch Ultra.webp" alt=""> <!-- Image comment: Replace with actual Smart Watch Ultra image URL -->
+                            <img src="https://via.placeholder.com/300x300" alt="Smart Watch Ultra" class="card-img-top">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="product-name card-title">Smart Watch Ultra</h5>
+                                <p class="product-desc card-text">Health tracking and GPS with long battery life</p>
+                                <div class="product-meta mt-auto">
+                                    <span class="price fw-bold">$399.99</span>
+                                    <span class="rating">⭐⭐⭐⭐½ (4.4)</span>
+                                </div>
+                                <button class="btn btn-primary mt-3">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 6 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="product-card card h-100">
+                           <img src="ANC Earbuds.webp" alt=""><!-- Image comment: Replace with actual Noise Canceling Earbuds image URL -->
+                            <img src="https://via.placeholder.com/300x300" alt="Noise Canceling Earbuds" class="card-img-top">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="product-name card-title">ANC Earbuds</h5>
+                                <p class="product-desc card-text">Crystal clear sound with active noise cancellation</p>
+                                <div class="product-meta mt-auto">
+                                    <span class="price fw-bold">$149.99</span>
+                                    <span class="rating">⭐⭐⭐⭐ (4.2)</span>
+                                </div>
+                                <button class="btn btn-primary mt-3">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 7 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="product-card card h-100">
+                           <img src="Tablet Pro 12.webp" alt=""> <!-- Image comment: Replace with actual Tablet Pro 12" image URL -->
+                            <img src="https://via.placeholder.com/300x300" alt="Tablet Pro 12" class="card-img-top">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="product-name card-title">Tablet Pro 12"</h5>
+                                <p class="product-desc card-text">Powerful tablet for creative professionals</p>
+                                <div class="product-meta mt-auto">
+                                    <span class="price fw-bold">$899.99</span>
+                                    <span class="rating">⭐⭐⭐⭐⭐ (4.9)</span>
+                                </div>
+                                <button class="btn btn-primary mt-3">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 8 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="product-card card h-100">
+                           <img src="RGB Gaming Keyboard.webp" alt=""> <!-- Image comment: Replace with actual Mechanical Gaming Keyboard image URL -->
+                            <img src="https://via.placeholder.com/300x300" alt="Mechanical Gaming Keyboard" class="card-img-top">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="product-name card-title">RGB Gaming Keyboard</h5>
+                                <p class="product-desc card-text">Tactile mechanical switches with customizable lighting</p>
+                                <div class="product-meta mt-auto">
+                                    <span class="price fw-bold">$129.99</span>
+                                    <span class="rating">⭐⭐⭐⭐½ (4.6)</span>
+                                </div>
+                                <button class="btn btn-primary mt-3">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section (Using Bootstrap form and grid for responsive layout) -->
+        <section id="newsletter-section" class="py-5">
+            <div class="container">
+                <div class="newsletter-box bg-light p-4 rounded text-center">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to our newsletter for exclusive deals and updates.</p>
+                    <form class="newsletter-form row g-3 justify-content-center">
+                        <div class="col-md-6">
+                            <input type="email" class="form-control" placeholder="Enter your email address" required>
+                        </div>
+                        <div class="col-md-2">
+                            <button type="submit" class="btn btn-primary w-100">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section (Using Bootstrap grid for responsive footer) -->
+    <footer id="footer-info" class="footer bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h4>About Us</h4>
+                    <p>TechHub Store is your one-stop shop for the latest technology and gadgets. We provide high-quality products from top brands.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-light me-2">FB</a> | <a href="#" class="text-light me-2">TW</a> | <a href="#" class="text-light me-2">IG</a> | <a href="#" class="text-light">LI</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h4>Customer Service</h4>
+                    <ul class="footer-links list-unstyled">
+                        <li><a href="#" class="text-light">FAQ</a></li>
+                        <li><a href="#" class="text-light">Shipping Info</a></li>
+                        <li><a href="#" class="text-light">Returns</a></li>
+                        <li><a href="#" class="text-light">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h4>Contact Information</h4>
+                    <address class="text-light">
+                        123 Tech Street, Digital City, DC 12345<br>
+                        Phone: +1 (555) 123-4567<br>
+                        Email: <a href="mailto:support@techhubstore.com" class="text-light">support@techhubstore.com</a>
+                    </address>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col text-center">
+                    <p class="copyright mb-0">© 2026 TechHub Store. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS (from Bootstrap 5.3.0 documentation: https://getbootstrap.com/docs/5.3/getting-started/introduction/) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLgg4zKSRFvvYDwjP93WyK3aLKFZaGnKWP9bWrTFrhZz8T5NnHnfg5U5" crossorigin="anonymous"></script>
+
+</body>
+</html>
